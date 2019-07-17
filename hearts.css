@@ -1,0 +1,114 @@
+h1 {
+	text-align: center;
+
+}
+
+div {
+	border: 2px solid black;
+}
+
+#north-player {
+	position: absolute;
+	bottom: 5px;
+	left: 100px;
+	width: 1400px;
+}
+
+#north-player > h3 {
+	text-align: center;
+	margin-top: 0px;
+}
+
+#south-player {
+	height: 210px;
+}
+
+#south-player > h3 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.text_player_message_log {
+	display: inline;
+	margin: 10px;
+	height: 15px;
+	width: 25%;
+}
+
+.text_player_cards > img {
+	height: 150px;
+	width: 100px;
+	margin: 2px;
+}
+
+.selected {
+	border: 3px solid #cc00ff;
+}
+
+.playable {
+	border: 3px solid #ccffff;
+}
+
+.played {
+	border: 3px solid #33cc33;
+}
+
+.text_player_cards {
+	height: 170px;
+	overflow: auto;
+	margin-top: 5px;
+	text-align: center;
+	border: none;
+}
+
+
+#west-player {
+	position: absolute;
+    right: 8px;
+    width: 25%;
+	height: 225px;
+	
+}
+
+#west-player > h3 {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#east-player {
+	position: absolute;
+	left: 8px;
+	width: 25%;
+	height: 225px;
+}
+
+#east-player > h3 {
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#east-card {
+	height: 150px;
+	width: 100px;
+	position: absolute;
+	right: 50px;
+}
+
+#west-card {
+	height: 150px;
+	width: 100px;
+	position: absolute;
+	left: 50px;
+}
+
+#south-card {
+	height: 150px;
+	width: 100px;
+	display: block;
+	margin: auto;
+	margin-top: 5px;
+}

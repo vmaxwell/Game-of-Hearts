@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Game of Hearts</title>
+		<script src="jquery-3.2.1.js"></script>
+		<script src="Card.js"></script>
+		<script src="Hearts.js"></script>
+		<script src="HeartsMatch.js"></script>
+		<script src="MyTextPlayer.js"></script>
+		<script src="DumbAI.js"></script>
+		<link rel="stylesheet" type="text/css" href="hearts.css">
+	</head>
+	
+	<body>
+		<h1>Game of Hearts</h1>
+		
+	
+		<div id="south-player">
+			<h3>South Player: 0</h3>
+		</div>
+		
+		<div id="east-player">
+			<h3>East Player: 0</h3>
+		</div>
+		
+		<div id="west-player">
+			<h3>West Player: 0</h3>
+		</div>
+		
+		<div id="north-player">
+			<h3>North Player: 0</h3>
+		</div>
+	
+		<script>
+			var north = new MyTextPlayer("North Player", $("#north-player")[0]);
+			var east = new DumbAI("East Player");
+			var south = new DumbAI("South Player");
+			var west = new DumbAI("West Player");
+	
+			
+	
+			var match = new HeartsMatch(north, east, south, west);
+			match.run();
+			
+			
+		</script>
+		
+	</body>
+	
+	
+	
+</html>
